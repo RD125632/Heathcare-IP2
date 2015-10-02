@@ -1,0 +1,11 @@
+c:\users\richard\documents\visual studio 2015\Projects\Healthcare IP2\Healthcare IP2\bin\Debug\Healthcare IP2.exe.config
+c:\users\richard\documents\visual studio 2015\Projects\Healthcare IP2\Healthcare IP2\bin\Debug\Healthcare IP2.exe
+c:\users\richard\documents\visual studio 2015\Projects\Healthcare IP2\Healthcare IP2\bin\Debug\Healthcare IP2.pdb
+c:\users\richard\documents\visual studio 2015\Projects\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare_IP2.MainForm.resources
+c:\users\richard\documents\visual studio 2015\Projects\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare_IP2.Properties.Resources.resources
+c:\users\richard\documents\visual studio 2015\Projects\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare IP2.csproj.GenerateResource.Cache
+c:\users\richard\documents\visual studio 2015\Projects\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare IP2.exe
+c:\users\richard\documents\visual studio 2015\Projects\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare IP2.pdb
+c:\users\richard\documents\visual studio 2015\Projects\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare_IP2.UserControls.UserForm.resources
+c:\users\richard\documents\visual studio 2015\Projects\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare_IP2.UserControls.TestForm.resources
+c:\users\richard\documents\visual studio 2015\Projects\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare IP2.csprojResolveAssemblyReference.cache
