@@ -34,3 +34,14 @@ C:\Users\Richard\Documents\Heathcare-IP2\Healthcare IP2\Healthcare IP2\obj\Debug
 C:\Users\Richard\Documents\Heathcare-IP2\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare IP2.exe
 C:\Users\Richard\Documents\Heathcare-IP2\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare IP2.pdb
 >>>>>>> origin/feature/Training
+C:\Users\Yorick\Documents\Visual Studio 2015\Projects\Heathcare-IP2\Healthcare IP2\Healthcare IP2\bin\Debug\Healthcare IP2.exe.config
+C:\Users\Yorick\Documents\Visual Studio 2015\Projects\Heathcare-IP2\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare IP2.exe
+C:\Users\Yorick\Documents\Visual Studio 2015\Projects\Heathcare-IP2\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare IP2.pdb
+C:\Users\Yorick\Documents\Visual Studio 2015\Projects\Heathcare-IP2\Healthcare IP2\Healthcare IP2\bin\Debug\Healthcare IP2.exe
+C:\Users\Yorick\Documents\Visual Studio 2015\Projects\Heathcare-IP2\Healthcare IP2\Healthcare IP2\bin\Debug\Healthcare IP2.pdb
+C:\Users\Yorick\Documents\Visual Studio 2015\Projects\Heathcare-IP2\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare IP2.csprojResolveAssemblyReference.cache
+C:\Users\Yorick\Documents\Visual Studio 2015\Projects\Heathcare-IP2\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare_IP2.MainForm.resources
+C:\Users\Yorick\Documents\Visual Studio 2015\Projects\Heathcare-IP2\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare_IP2.Properties.Resources.resources
+C:\Users\Yorick\Documents\Visual Studio 2015\Projects\Heathcare-IP2\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare_IP2.UserControls.TestForm.resources
+C:\Users\Yorick\Documents\Visual Studio 2015\Projects\Heathcare-IP2\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare_IP2.UserControls.UserForm.resources
+C:\Users\Yorick\Documents\Visual Studio 2015\Projects\Heathcare-IP2\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare IP2.csproj.GenerateResource.Cache
