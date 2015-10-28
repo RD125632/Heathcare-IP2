@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Healthcare_IP2.JsonObjects
 {
-    class Test
+    public class Test
     {
         public string userName { get; private set; }
         public int userAge { get; private set; }
