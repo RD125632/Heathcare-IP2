@@ -9,6 +9,19 @@ c:\users\richard\documents\visual studio 2015\Projects\Healthcare IP2\Healthcare
 c:\users\richard\documents\visual studio 2015\Projects\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare_IP2.UserControls.UserForm.resources
 c:\users\richard\documents\visual studio 2015\Projects\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare_IP2.UserControls.TestForm.resources
 c:\users\richard\documents\visual studio 2015\Projects\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare IP2.csprojResolveAssemblyReference.cache
+<<<<<<< HEAD
+C:\Users\iMegumii\Source\Repos\Heathcare-IP2\Healthcare IP2\Healthcare IP2\bin\Debug\Healthcare IP2.exe.config
+C:\Users\iMegumii\Source\Repos\Heathcare-IP2\Healthcare IP2\Healthcare IP2\bin\Debug\Healthcare IP2.exe
+C:\Users\iMegumii\Source\Repos\Heathcare-IP2\Healthcare IP2\Healthcare IP2\bin\Debug\Healthcare IP2.pdb
+C:\Users\iMegumii\Source\Repos\Heathcare-IP2\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare IP2.csprojResolveAssemblyReference.cache
+C:\Users\iMegumii\Source\Repos\Heathcare-IP2\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare_IP2.MainForm.resources
+C:\Users\iMegumii\Source\Repos\Heathcare-IP2\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare_IP2.Properties.Resources.resources
+C:\Users\iMegumii\Source\Repos\Heathcare-IP2\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare_IP2.UserControls.TestForm.resources
+C:\Users\iMegumii\Source\Repos\Heathcare-IP2\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare_IP2.UserControls.UserForm.resources
+C:\Users\iMegumii\Source\Repos\Heathcare-IP2\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare IP2.csproj.GenerateResource.Cache
+C:\Users\iMegumii\Source\Repos\Heathcare-IP2\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare IP2.exe
+C:\Users\iMegumii\Source\Repos\Heathcare-IP2\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare IP2.pdb
+=======
 C:\Users\Richard\Documents\Heathcare-IP2\Healthcare IP2\Healthcare IP2\bin\Debug\Healthcare IP2.exe.config
 C:\Users\Richard\Documents\Heathcare-IP2\Healthcare IP2\Healthcare IP2\bin\Debug\Healthcare IP2.exe
 C:\Users\Richard\Documents\Heathcare-IP2\Healthcare IP2\Healthcare IP2\bin\Debug\Healthcare IP2.pdb
@@ -20,3 +33,5 @@ C:\Users\Richard\Documents\Heathcare-IP2\Healthcare IP2\Healthcare IP2\obj\Debug
 C:\Users\Richard\Documents\Heathcare-IP2\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare IP2.csproj.GenerateResource.Cache
 C:\Users\Richard\Documents\Heathcare-IP2\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare IP2.exe
 C:\Users\Richard\Documents\Heathcare-IP2\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare IP2.pdb
+>>>>>>> origin/feature/Training
+C:\Users\Richard\Documents\Heathcare-IP2\Healthcare IP2\Healthcare IP2\obj\Debug\Healthcare_IP2.UserControls.ResultForm.resources

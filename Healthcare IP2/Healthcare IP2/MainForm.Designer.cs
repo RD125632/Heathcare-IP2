@@ -34,6 +34,7 @@
             this.closeLBLBTN = new System.Windows.Forms.Label();
             this.testForm1 = new Healthcare_IP2.UserControls.TestForm();
             this.userForm1 = new Healthcare_IP2.UserControls.UserForm();
+            this.resultForm1 = new Healthcare_IP2.UserControls.ResultForm();
             this.menuPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,7 +87,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.testForm1.AutoSize = true;
             this.testForm1.BackColor = System.Drawing.Color.DimGray;
-            this.testForm1.Location = new System.Drawing.Point(-2, 42);
+            this.testForm1.Location = new System.Drawing.Point(0, 45);
             this.testForm1.Name = "testForm1";
             this.testForm1.Size = new System.Drawing.Size(917, 645);
             this.testForm1.TabIndex = 2;
@@ -94,13 +95,27 @@
             // 
             // userForm1
             // 
-            this.userForm1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.userForm1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.userForm1.AutoSize = true;
             this.userForm1.BackColor = System.Drawing.Color.DimGray;
-            this.userForm1.Location = new System.Drawing.Point(0, 45);
+            this.userForm1.Location = new System.Drawing.Point(3, 45);
             this.userForm1.Name = "userForm1";
-            this.userForm1.Size = new System.Drawing.Size(584, 663);
+            this.userForm1.Size = new System.Drawing.Size(584, 664);
             this.userForm1.TabIndex = 1;
+            // 
+            // resultForm1
+            // 
+            this.resultForm1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.resultForm1.AutoSize = true;
+            this.resultForm1.BackColor = System.Drawing.Color.DimGray;
+            this.resultForm1.Location = new System.Drawing.Point(0, 45);
+            this.resultForm1.Name = "resultForm1";
+            this.resultForm1.Size = new System.Drawing.Size(932, 660);
+            this.resultForm1.TabIndex = 3;
             // 
             // MainForm
             // 
@@ -111,6 +126,7 @@
             this.Controls.Add(this.testForm1);
             this.Controls.Add(this.userForm1);
             this.Controls.Add(this.menuPanel);
+            this.Controls.Add(this.resultForm1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
@@ -130,6 +146,7 @@
         private UserControls.UserForm userForm1;
         private UserControls.TestForm testForm1;
         private System.Windows.Forms.Label nameFORMLBL;
+        private UserControls.ResultForm resultForm1;
     }
 }
 

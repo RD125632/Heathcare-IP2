@@ -19,8 +19,17 @@ namespace Healthcare_IP2
         public MainForm()
         {
             InitializeComponent();
-            bikeHandler = new BikeCommHandler();
-            bikeHandler.initComm("COM4");
+            bikeHandler = new BikeCommHandler(this);
+        }
+
+        public void SetComPort(string port)
+        {
+            bikeHandler.initComm(port);
+        }
+
+        public void SendDataToForm(string[] data)
+        {
+            testForm1.HandleBikeData(data);
         }
 
         public void SetNameLBL(string str)
@@ -42,5 +51,11 @@ namespace Healthcare_IP2
         {
             closeLBLBTN.ForeColor = Color.White;
         }
+
+        public void setResultControl()
+        {
+            this.resultForm1.Visible = true;
+        }
+
     }
 }

@@ -44,7 +44,7 @@
             this.vomaxLBL.BackColor = System.Drawing.Color.Transparent;
             this.vomaxLBL.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vomaxLBL.ForeColor = System.Drawing.Color.LightCoral;
-            this.vomaxLBL.Location = new System.Drawing.Point(460, 135);
+            this.vomaxLBL.Location = new System.Drawing.Point(407, 135);
             this.vomaxLBL.Name = "vomaxLBL";
             this.vomaxLBL.Size = new System.Drawing.Size(122, 36);
             this.vomaxLBL.TabIndex = 27;
@@ -57,7 +57,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label4.Location = new System.Drawing.Point(296, 135);
+            this.label4.Location = new System.Drawing.Point(243, 135);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(142, 36);
             this.label4.TabIndex = 26;
@@ -70,7 +70,7 @@
             this.hrrLBL.BackColor = System.Drawing.Color.Transparent;
             this.hrrLBL.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hrrLBL.ForeColor = System.Drawing.Color.LightCoral;
-            this.hrrLBL.Location = new System.Drawing.Point(237, 36);
+            this.hrrLBL.Location = new System.Drawing.Point(184, 36);
             this.hrrLBL.Name = "hrrLBL";
             this.hrrLBL.Size = new System.Drawing.Size(117, 36);
             this.hrrLBL.TabIndex = 22;
@@ -83,7 +83,7 @@
             this.hrmLBL.BackColor = System.Drawing.Color.Transparent;
             this.hrmLBL.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hrmLBL.ForeColor = System.Drawing.Color.LightCoral;
-            this.hrmLBL.Location = new System.Drawing.Point(232, 0);
+            this.hrmLBL.Location = new System.Drawing.Point(179, 0);
             this.hrmLBL.Name = "hrmLBL";
             this.hrmLBL.Size = new System.Drawing.Size(128, 36);
             this.hrmLBL.TabIndex = 21;
@@ -96,7 +96,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(89, 36);
+            this.label2.Location = new System.Drawing.Point(36, 36);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(142, 36);
             this.label2.TabIndex = 19;
@@ -109,7 +109,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(89, 0);
+            this.label1.Location = new System.Drawing.Point(36, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(137, 36);
             this.label1.TabIndex = 18;
@@ -119,7 +119,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Healthcare_IP2.Properties.Resources.VO2Max;
-            this.pictureBox1.Location = new System.Drawing.Point(141, 191);
+            this.pictureBox1.Location = new System.Drawing.Point(32, 183);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(659, 428);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -130,7 +130,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Transparent;
+            this.BackColor = System.Drawing.Color.DimGray;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.vomaxLBL);
             this.Controls.Add(this.label4);
@@ -139,7 +139,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "ResultForm";
-            this.Size = new System.Drawing.Size(932, 660);
+            this.Size = new System.Drawing.Size(827, 637);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

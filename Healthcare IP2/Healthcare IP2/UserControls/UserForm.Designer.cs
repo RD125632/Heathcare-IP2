@@ -39,6 +39,8 @@
             this.weightPNL = new System.Windows.Forms.Panel();
             this.weightBox = new System.Windows.Forms.TextBox();
             this.startBTN = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comLBL = new System.Windows.Forms.Label();
             this.namePNL.SuspendLayout();
             this.agePNL.SuspendLayout();
             this.weightPNL.SuspendLayout();
@@ -52,7 +54,7 @@
             this.namePNL.Controls.Add(this.nameBox);
             this.namePNL.Location = new System.Drawing.Point(269, 100);
             this.namePNL.Name = "namePNL";
-            this.namePNL.Size = new System.Drawing.Size(413, 47);
+            this.namePNL.Size = new System.Drawing.Size(413, 48);
             this.namePNL.TabIndex = 0;
             // 
             // nameBox
@@ -85,7 +87,7 @@
             this.ageLBL.BackColor = System.Drawing.Color.Transparent;
             this.ageLBL.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ageLBL.ForeColor = System.Drawing.Color.Gainsboro;
-            this.ageLBL.Location = new System.Drawing.Point(426, 240);
+            this.ageLBL.Location = new System.Drawing.Point(426, 197);
             this.ageLBL.Name = "ageLBL";
             this.ageLBL.Size = new System.Drawing.Size(99, 36);
             this.ageLBL.TabIndex = 3;
@@ -98,9 +100,9 @@
             this.agePNL.BackColor = System.Drawing.Color.Gainsboro;
             this.agePNL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.agePNL.Controls.Add(this.ageBox);
-            this.agePNL.Location = new System.Drawing.Point(274, 279);
+            this.agePNL.Location = new System.Drawing.Point(274, 236);
             this.agePNL.Name = "agePNL";
-            this.agePNL.Size = new System.Drawing.Size(408, 47);
+            this.agePNL.Size = new System.Drawing.Size(408, 48);
             this.agePNL.TabIndex = 2;
             // 
             // ageBox
@@ -120,12 +122,13 @@
             this.weightLBL.BackColor = System.Drawing.Color.Transparent;
             this.weightLBL.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.weightLBL.ForeColor = System.Drawing.Color.Gainsboro;
-            this.weightLBL.Location = new System.Drawing.Point(421, 422);
+            this.weightLBL.Location = new System.Drawing.Point(421, 310);
             this.weightLBL.Name = "weightLBL";
             this.weightLBL.Size = new System.Drawing.Size(125, 36);
             this.weightLBL.TabIndex = 5;
             this.weightLBL.Text = "Weight";
             this.weightLBL.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.weightLBL.Click += new System.EventHandler(this.weightLBL_Click);
             // 
             // weightPNL
             // 
@@ -133,9 +136,9 @@
             this.weightPNL.BackColor = System.Drawing.Color.Gainsboro;
             this.weightPNL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.weightPNL.Controls.Add(this.weightBox);
-            this.weightPNL.Location = new System.Drawing.Point(274, 461);
+            this.weightPNL.Location = new System.Drawing.Point(269, 373);
             this.weightPNL.Name = "weightPNL";
-            this.weightPNL.Size = new System.Drawing.Size(408, 47);
+            this.weightPNL.Size = new System.Drawing.Size(408, 48);
             this.weightPNL.TabIndex = 4;
             // 
             // weightBox
@@ -164,11 +167,36 @@
             this.startBTN.UseVisualStyleBackColor = false;
             this.startBTN.Click += new System.EventHandler(this.startBTN_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(264, 500);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(413, 21);
+            this.comboBox1.TabIndex = 7;
+            // 
+            // comLBL
+            // 
+            this.comLBL.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.comLBL.BackColor = System.Drawing.Color.Transparent;
+            this.comLBL.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comLBL.ForeColor = System.Drawing.Color.Gainsboro;
+            this.comLBL.Location = new System.Drawing.Point(421, 445);
+            this.comLBL.Name = "comLBL";
+            this.comLBL.Size = new System.Drawing.Size(125, 36);
+            this.comLBL.TabIndex = 8;
+            this.comLBL.Text = "COM";
+            this.comLBL.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // UserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.comLBL);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.startBTN);
             this.Controls.Add(this.weightLBL);
             this.Controls.Add(this.weightPNL);
@@ -177,7 +205,7 @@
             this.Controls.Add(this.nameLBL);
             this.Controls.Add(this.namePNL);
             this.Name = "UserForm";
-            this.Size = new System.Drawing.Size(946, 660);
+            this.Size = new System.Drawing.Size(946, 663);
             this.namePNL.ResumeLayout(false);
             this.namePNL.PerformLayout();
             this.agePNL.ResumeLayout(false);
@@ -201,5 +229,7 @@
         private System.Windows.Forms.Panel weightPNL;
         private System.Windows.Forms.TextBox weightBox;
         private System.Windows.Forms.Button startBTN;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label comLBL;
     }
 }

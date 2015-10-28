@@ -23,7 +23,15 @@ namespace Healthcare_IP2.UserControls
             Test tempTest = ((MainForm)this.Parent).test;
             hrmLBL.Text = hrm + "";
             hrrLBL.Text = hrr + "";
-            vomaxLBL.Text = ((((15 * (hrm / hrr)) * 1000) / tempTest.userWeight) / 7) + "";
+            try
+            {
+                vomaxLBL.Text = ((((15 * (hrm / hrr)) * 1000) / tempTest.userWeight) / 7) + "";
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("De patient is dood! RUSTAAAAGH!!!");
+            }
+            
         }
     }
 }

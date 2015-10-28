@@ -10,7 +10,6 @@ namespace Healthcare_IP2
     public class BikeCommHandler
     {
         // vaste waarden
-        public static readonly string COMMAND = "CU";
         public static readonly string CMD_TIME = "PT";
         public static readonly string CMD_DISTANCE = "PD";
         public static readonly string CMD_POWER = "PW";
@@ -40,12 +39,18 @@ namespace Healthcare_IP2
         public delegate void ErrorDelegate(string error);
         public static event ErrorDelegate IncomingErrorEvent;
 
-        
+        private MainForm Parent;
 
-        private static void OnIncomingDataEvent(string[] data)
+        public BikeCommHandler(MainForm Parent)
         {
-            DataDelegate handler = IncomingDataEvent;
-            if (handler != null) handler(data);
+            this.Parent = Parent;
+        }
+
+        public void OnIncomingDataEvent(string[] data)
+        {
+            //DataDelegate handler = IncomingDataEvent;
+            //if (handler != null) handler(data);
+            ((MainForm)this.Parent).SendDataToForm(data);
         }
 
         public static void OnIncomingErrorEvent(string error)
@@ -84,7 +89,8 @@ namespace Healthcare_IP2
 
         public void closeComm()
         {
-            ComPort.Close();
+            if(ComPort != null) { ComPort.Close(); }
+            
         }
 
         public void sendData(string data)
@@ -132,41 +138,6 @@ namespace Healthcare_IP2
             OnIncomingDataEvent(bufferIn);
         }
 
-        public bool checkBikeState(bool commandMode)
-        {
-            if (ComPort == null || !ComPort.IsOpen)
-            {
-                OnIncomingErrorEvent("NotConnectedToBike");
-                state = State.notConnected;
-                return false;
-            }
-            switch (state)
-            {
-                case State.reset:
-                    if (commandMode) setCommandMode();
-                    if (returnData != ReturnData.ERROR)
-                        return true;
-                    return false;
-                case State.connected:
-                    if (commandMode) setCommandMode();
-                    return true;
-                case State.command:
-                    return true;
-                case State.notConnected:
-                    OnIncomingErrorEvent("NotConnectedToBike");
-                    Console.WriteLine("ERROR: not connected to bike.");
-                    return false;
-                default:
-                    OnIncomingErrorEvent("NotConnectedToBike");
-                    Console.WriteLine("ERROR: unknown error.");
-                    return false;
-            }
-        }
-
-        public void setCommandMode()
-        {
-            sendData(COMMAND);
-        }
     }
 }
 

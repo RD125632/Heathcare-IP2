@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.nameLBL = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -104,7 +106,7 @@
             this.speedLBL.Name = "speedLBL";
             this.speedLBL.Size = new System.Drawing.Size(122, 36);
             this.speedLBL.TabIndex = 9;
-            this.speedLBL.Text = "100";
+            this.speedLBL.Text = "0";
             this.speedLBL.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // distanceLBL
@@ -117,7 +119,7 @@
             this.distanceLBL.Name = "distanceLBL";
             this.distanceLBL.Size = new System.Drawing.Size(122, 36);
             this.distanceLBL.TabIndex = 10;
-            this.distanceLBL.Text = "120";
+            this.distanceLBL.Text = "0";
             this.distanceLBL.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // timeLBL
@@ -130,7 +132,7 @@
             this.timeLBL.Name = "timeLBL";
             this.timeLBL.Size = new System.Drawing.Size(122, 36);
             this.timeLBL.TabIndex = 12;
-            this.timeLBL.Text = "10:00";
+            this.timeLBL.Text = "00:00";
             this.timeLBL.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pulseChart
@@ -141,8 +143,8 @@
             this.pulseChart.BorderSkin.BackColor = System.Drawing.Color.Transparent;
             this.pulseChart.BorderSkin.BorderColor = System.Drawing.Color.Transparent;
             this.pulseChart.BorderSkin.PageColor = System.Drawing.Color.Transparent;
-            chartArea1.Name = "ChartArea1";
-            this.pulseChart.ChartAreas.Add(chartArea1);
+            chartArea2.Name = "ChartArea1";
+            this.pulseChart.ChartAreas.Add(chartArea2);
             this.pulseChart.Location = new System.Drawing.Point(18, 184);
             this.pulseChart.Name = "pulseChart";
             this.pulseChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
@@ -150,14 +152,30 @@
         System.Drawing.Color.LightCoral,
         System.Drawing.Color.LightGreen,
         System.Drawing.Color.Khaki};
-            series1.BorderWidth = 10;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Name = "Speed";
-            series1.XValueMember = "Time";
-            series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time;
-            series1.YValueMembers = "Speed";
-            this.pulseChart.Series.Add(series1);
+            series4.BorderWidth = 10;
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series4.Name = "Speed";
+            series4.XValueMember = "Time";
+            series4.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time;
+            series4.YValueMembers = "Speed";
+            series5.BorderWidth = 10;
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series5.Name = "RPM";
+            series5.XValueMember = "Time";
+            series5.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time;
+            series5.YValueMembers = "RPM";
+            series6.BorderWidth = 10;
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series6.Name = "BPM";
+            series6.XValueMember = "Time";
+            series6.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time;
+            series6.YValueMembers = "BPM";
+            this.pulseChart.Series.Add(series4);
+            this.pulseChart.Series.Add(series5);
+            this.pulseChart.Series.Add(series6);
             this.pulseChart.Size = new System.Drawing.Size(896, 458);
             this.pulseChart.TabIndex = 13;
             // 
