@@ -18,10 +18,12 @@ namespace Healthcare_IP2.UserControls
         private List<DataPoint> speedPoints = new List<DataPoint>();
         private List<DataPoint> bpmPoints = new List<DataPoint>();
         private List<DataPoint> rpmPoints = new List<DataPoint>();
-        private Thread workerThread;
+
         private delegate void SetSpeedLabel(string txt);
         private delegate void SetDistanceLabel(string txt);
         private delegate void SetTimeLabel(string txt);
+        private Thread workerThread, trainingThread;
+        private int BPMrest, BPMmax;
 
         public TestForm()
         {
@@ -57,6 +59,55 @@ namespace Healthcare_IP2.UserControls
                 speedLBL.Text = txt;
             }
         }
+        private void warmupLoop()
+        {
+            // Start at 50 Watt
+            ((MainForm)this.Parent).bikeHandler.sendData(BikeCommHandler.CMD_POWER + " 50\n");
+            int second = 0;
+            int minute = 0;
+            int temp = 0;
+
+            while (true)
+            {
+                if (minute > 7)
+                {
+                    
+                }
+                else
+                {
+                    if (second == 60)
+                    {
+                        second = 0;
+                        minute++;
+
+                        if (Int32.Parse(label5.Text) < 150)
+                        {
+                           temp = Int32.Parse(label5.Text) + 15;
+                            label5.Text = ""+temp;
+                        }
+
+                        try
+                        {
+                            Console.WriteLine("PW " + temp);
+                            Thread.Sleep(100);
+                            ((MainForm)this.Parent).bikeHandler.sendData("PW " + temp + "\n");
+
+                        }
+                        catch (Exception)
+                        {
+                            ((MainForm)this.Parent).bikeHandler.closeComm();
+                        }
+
+                        Thread.Sleep(1000);
+                    }
+                    else
+                    {
+                        second++;
+                    }
+                    timeLBL.Text = minute + ":" + second;
+                }
+            }
+        }
 
         public void SetDistanceLBL(string txt)
         {
@@ -90,14 +141,24 @@ namespace Healthcare_IP2.UserControls
                 Console.WriteLine(s);
             }
 
+            if (!speedPoints.Any())
+            {
+                BPMrest = Convert.ToInt32(data[0]);
+            }
+            else
+            {
+                if (Convert.ToInt32(data[0]) > BPMmax)
+                {
+                    BPMmax = Convert.ToInt32(data[0]);
+                }
+            }
+
             //fill fields
             SetSpeedLBL(data[2]);
             SetDistanceLBL(data[3]);
-            SetTimeLBL(data[6]);
+            //SetTimeLBL(data[6]);
             try
             {
-
-
                 speedPoints.Add(new DataPoint(Convert.ToDateTime(data[6]).ToOADate(), Convert.ToDouble(data[2])));
                 rpmPoints.Add(new DataPoint(Convert.ToDateTime(data[6]).ToOADate(), Convert.ToDouble(data[1])));
                 bpmPoints.Add(new DataPoint(Convert.ToDateTime(data[6]).ToOADate(), Convert.ToDouble(data[0])));
@@ -133,6 +194,10 @@ namespace Healthcare_IP2.UserControls
             startBTN.Visible = false;
             workerThread = new Thread(() => threadLoop());
             workerThread.Start();
+
+            trainingThread = new Thread(() => warmupLoop());
+            trainingThread.Start();
+
         }
     }
 }

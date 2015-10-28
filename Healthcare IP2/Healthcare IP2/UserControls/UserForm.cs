@@ -37,7 +37,7 @@ namespace Healthcare_IP2.UserControls
             int weight = 0;
             Int32.TryParse(ageBox.Text, out age);
             Int32.TryParse(weightBox.Text, out weight);
-            new Test(nameBox.Text, age, weight);
+            ((MainForm)this.Parent).test = new Test(nameBox.Text, age, weight);
             this.Visible = false;
             ((MainForm)this.Parent).SetNameLBL(nameBox.Text);
             this.Parent.Controls["testForm1"].Visible = true;
