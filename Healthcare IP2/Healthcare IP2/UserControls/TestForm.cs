@@ -18,7 +18,9 @@ namespace Healthcare_IP2.UserControls
         private List<DataPoint> speedPoints = new List<DataPoint>();
         private List<DataPoint> bpmPoints = new List<DataPoint>();
         private List<DataPoint> rpmPoints = new List<DataPoint>();
-        private Thread workerThread;
+        private Thread workerThread, trainingThread;
+        private int BPMrest, BPMmax;
+
 
         public TestForm()
         {
@@ -43,8 +45,68 @@ namespace Healthcare_IP2.UserControls
             }
         }
 
+        private void warmupLoop()
+        {
+            // Start at 50 Watt
+            ((MainForm)this.Parent).bikeHandler.sendData(BikeCommHandler.COMMAND);
+            ((MainForm)this.Parent).bikeHandler.sendData(BikeCommHandler.CMD_POWER + " 50");
+            int second = 0;
+            int minute = 0;
+            int temp = 0;
+
+            while (true)
+            {
+                if (minute > 7)
+                {
+                    
+                }
+                else
+                {
+                    if (second == 60)
+                    {
+                        second = 0;
+                        minute++;
+
+                        if (Int32.Parse(label5.Text) < 150)
+                        {
+                           temp = Int32.Parse(label5.Text) + 17;
+                        }
+
+                        try
+                        {
+                            ((MainForm)this.Parent).bikeHandler.sendData(BikeCommHandler.COMMAND);
+                            ((MainForm)this.Parent).bikeHandler.sendData(BikeCommHandler.CMD_POWER + " " + temp);
+                        }
+                        catch (Exception)
+                        {
+                            ((MainForm)this.Parent).bikeHandler.closeComm();
+                        }
+
+                        Thread.Sleep(1000);
+                    }
+                    else
+                    {
+                        second++;
+                    }
+                    timeLBL.Text = minute + ":" + second;
+                }
+            }
+        }
+
         private void HandleBikeData(string[] data)
         {
+            if(!speedPoints.Any())
+            {
+                BPMrest = Convert.ToInt32(data[0]);
+            }
+            else
+            {
+                if(Convert.ToInt32(data[0]) > BPMmax)
+                {
+                    BPMmax = Convert.ToInt32(data[0]);
+                }
+            }
+
 
             //fill fields
             this.speedLBL.Text = data[0];
@@ -79,6 +141,10 @@ namespace Healthcare_IP2.UserControls
             startBTN.Visible = false;
             workerThread = new Thread(() => threadLoop());
             workerThread.Start();
+
+            trainingThread = new Thread(() => warmupLoop());
+            trainingThread.Start();
+
         }
     }
 }

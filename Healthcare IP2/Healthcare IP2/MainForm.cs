@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Healthcare_IP2.JsonObjects;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,7 @@ namespace Healthcare_IP2
     public partial class MainForm : Form
     {
         public BikeCommHandler bikeHandler;
+        public Test test;
 
         public MainForm()
         {

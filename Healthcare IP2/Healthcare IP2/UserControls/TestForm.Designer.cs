@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.nameLBL = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,6 +39,8 @@
             this.timeLBL = new System.Windows.Forms.Label();
             this.pulseChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.startBTN = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pulseChart)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,7 +74,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(438, 13);
+            this.label2.Location = new System.Drawing.Point(373, 13);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(142, 36);
             this.label2.TabIndex = 6;
@@ -85,7 +87,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label3.Location = new System.Drawing.Point(728, 13);
+            this.label3.Location = new System.Drawing.Point(747, 13);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(122, 36);
             this.label3.TabIndex = 8;
@@ -111,7 +113,7 @@
             this.distanceLBL.BackColor = System.Drawing.Color.Transparent;
             this.distanceLBL.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.distanceLBL.ForeColor = System.Drawing.Color.LightCoral;
-            this.distanceLBL.Location = new System.Drawing.Point(447, 69);
+            this.distanceLBL.Location = new System.Drawing.Point(382, 69);
             this.distanceLBL.Name = "distanceLBL";
             this.distanceLBL.Size = new System.Drawing.Size(122, 36);
             this.distanceLBL.TabIndex = 10;
@@ -124,7 +126,7 @@
             this.timeLBL.BackColor = System.Drawing.Color.Transparent;
             this.timeLBL.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timeLBL.ForeColor = System.Drawing.Color.LightCoral;
-            this.timeLBL.Location = new System.Drawing.Point(728, 69);
+            this.timeLBL.Location = new System.Drawing.Point(747, 69);
             this.timeLBL.Name = "timeLBL";
             this.timeLBL.Size = new System.Drawing.Size(122, 36);
             this.timeLBL.TabIndex = 12;
@@ -139,8 +141,8 @@
             this.pulseChart.BorderSkin.BackColor = System.Drawing.Color.Transparent;
             this.pulseChart.BorderSkin.BorderColor = System.Drawing.Color.Transparent;
             this.pulseChart.BorderSkin.PageColor = System.Drawing.Color.Transparent;
-            chartArea4.Name = "ChartArea1";
-            this.pulseChart.ChartAreas.Add(chartArea4);
+            chartArea1.Name = "ChartArea1";
+            this.pulseChart.ChartAreas.Add(chartArea1);
             this.pulseChart.Location = new System.Drawing.Point(18, 184);
             this.pulseChart.Name = "pulseChart";
             this.pulseChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
@@ -148,14 +150,14 @@
         System.Drawing.Color.LightCoral,
         System.Drawing.Color.LightGreen,
         System.Drawing.Color.Khaki};
-            series4.BorderWidth = 10;
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series4.Name = "Speed";
-            series4.XValueMember = "Time";
-            series4.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time;
-            series4.YValueMembers = "Speed";
-            this.pulseChart.Series.Add(series4);
+            series1.BorderWidth = 10;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Name = "Speed";
+            series1.XValueMember = "Time";
+            series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time;
+            series1.YValueMembers = "Speed";
+            this.pulseChart.Series.Add(series1);
             this.pulseChart.Size = new System.Drawing.Size(896, 458);
             this.pulseChart.TabIndex = 13;
             // 
@@ -173,11 +175,39 @@
             this.startBTN.UseVisualStyleBackColor = false;
             this.startBTN.Click += new System.EventHandler(this.startBTN_Click);
             // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label4.Location = new System.Drawing.Point(561, 13);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(142, 36);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Power";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.LightCoral;
+            this.label5.Location = new System.Drawing.Point(570, 69);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(122, 36);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "50";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // TestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.startBTN);
             this.Controls.Add(this.pulseChart);
             this.Controls.Add(this.timeLBL);
@@ -205,5 +235,7 @@
         private System.Windows.Forms.Label timeLBL;
         public System.Windows.Forms.DataVisualization.Charting.Chart pulseChart;
         private System.Windows.Forms.Button startBTN;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }

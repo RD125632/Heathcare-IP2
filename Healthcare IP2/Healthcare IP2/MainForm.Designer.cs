@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.menuPanel = new System.Windows.Forms.Panel();
-            this.closeLBLBTN = new System.Windows.Forms.Label();
             this.nameFORMLBL = new System.Windows.Forms.Label();
+            this.closeLBLBTN = new System.Windows.Forms.Label();
             this.testForm1 = new Healthcare_IP2.UserControls.TestForm();
             this.userForm1 = new Healthcare_IP2.UserControls.UserForm();
             this.menuPanel.SuspendLayout();
@@ -47,6 +47,19 @@
             this.menuPanel.Name = "menuPanel";
             this.menuPanel.Size = new System.Drawing.Size(584, 43);
             this.menuPanel.TabIndex = 0;
+            // 
+            // nameFORMLBL
+            // 
+            this.nameFORMLBL.AutoSize = true;
+            this.nameFORMLBL.BackColor = System.Drawing.Color.Transparent;
+            this.nameFORMLBL.Dock = System.Windows.Forms.DockStyle.Top;
+            this.nameFORMLBL.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameFORMLBL.ForeColor = System.Drawing.Color.Gainsboro;
+            this.nameFORMLBL.Location = new System.Drawing.Point(0, 0);
+            this.nameFORMLBL.Name = "nameFORMLBL";
+            this.nameFORMLBL.Size = new System.Drawing.Size(0, 36);
+            this.nameFORMLBL.TabIndex = 3;
+            this.nameFORMLBL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // closeLBLBTN
             // 
@@ -66,19 +79,6 @@
             this.closeLBLBTN.MouseEnter += new System.EventHandler(this.closeLBLBTN_MouseEnter);
             this.closeLBLBTN.MouseLeave += new System.EventHandler(this.closeLBLBTN_MouseLeave);
             // 
-            // nameFORMLBL
-            // 
-            this.nameFORMLBL.AutoSize = true;
-            this.nameFORMLBL.BackColor = System.Drawing.Color.Transparent;
-            this.nameFORMLBL.Dock = System.Windows.Forms.DockStyle.Top;
-            this.nameFORMLBL.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameFORMLBL.ForeColor = System.Drawing.Color.Gainsboro;
-            this.nameFORMLBL.Location = new System.Drawing.Point(0, 0);
-            this.nameFORMLBL.Name = "nameFORMLBL";
-            this.nameFORMLBL.Size = new System.Drawing.Size(0, 36);
-            this.nameFORMLBL.TabIndex = 3;
-            this.nameFORMLBL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // testForm1
             // 
             this.testForm1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -88,7 +88,7 @@
             this.testForm1.BackColor = System.Drawing.Color.DimGray;
             this.testForm1.Location = new System.Drawing.Point(-2, 42);
             this.testForm1.Name = "testForm1";
-            this.testForm1.Size = new System.Drawing.Size(583, 519);
+            this.testForm1.Size = new System.Drawing.Size(917, 645);
             this.testForm1.TabIndex = 2;
             this.testForm1.Visible = false;
             // 
