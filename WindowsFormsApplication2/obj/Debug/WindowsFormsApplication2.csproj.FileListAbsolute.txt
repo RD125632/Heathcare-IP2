@@ -25,3 +25,6 @@ C:\Users\iMegumii\rhapp\WindowsFormsApplication2\obj\Debug\WindowsFormsApplicati
 C:\Users\iMegumii\rhapp\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.exe
 C:\Users\iMegumii\rhapp\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pdb
 C:\Users\iMegumii\rhapp\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\iMegumii\Source\Repos\Heathcare-IP2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\iMegumii\Source\Repos\Heathcare-IP2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\iMegumii\Source\Repos\Heathcare-IP2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pdb

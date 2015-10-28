@@ -1,0 +1,6 @@
+C:\Users\iMegumii\Source\Repos\Heathcare-IP2\Healthcare IP2\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\iMegumii\Source\Repos\Heathcare-IP2\Healthcare IP2\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\iMegumii\Source\Repos\Heathcare-IP2\Healthcare IP2\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\iMegumii\Source\Repos\Heathcare-IP2\Healthcare IP2\ConsoleApplication1\obj\Debug\Server.csprojResolveAssemblyReference.cache
+C:\Users\iMegumii\Source\Repos\Heathcare-IP2\Healthcare IP2\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\iMegumii\Source\Repos\Heathcare-IP2\Healthcare IP2\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
