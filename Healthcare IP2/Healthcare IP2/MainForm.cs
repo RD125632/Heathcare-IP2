@@ -17,8 +17,17 @@ namespace Healthcare_IP2
         public MainForm()
         {
             InitializeComponent();
-            bikeHandler = new BikeCommHandler();
-            bikeHandler.initComm("COM4");
+            bikeHandler = new BikeCommHandler(this);
+        }
+
+        public void SetComPort(string port)
+        {
+            bikeHandler.initComm(port);
+        }
+
+        public void SendDataToForm(string[] data)
+        {
+            testForm1.HandleBikeData(data);
         }
 
         public void SetNameLBL(string str)

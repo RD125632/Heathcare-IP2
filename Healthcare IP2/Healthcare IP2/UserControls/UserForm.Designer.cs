@@ -39,6 +39,8 @@
             this.weightPNL = new System.Windows.Forms.Panel();
             this.weightBox = new System.Windows.Forms.TextBox();
             this.startBTN = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comLBL = new System.Windows.Forms.Label();
             this.namePNL.SuspendLayout();
             this.agePNL.SuspendLayout();
             this.weightPNL.SuspendLayout();
@@ -50,9 +52,9 @@
             this.namePNL.BackColor = System.Drawing.Color.Gainsboro;
             this.namePNL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.namePNL.Controls.Add(this.nameBox);
-            this.namePNL.Location = new System.Drawing.Point(269, 100);
+            this.namePNL.Location = new System.Drawing.Point(269, 92);
             this.namePNL.Name = "namePNL";
-            this.namePNL.Size = new System.Drawing.Size(413, 47);
+            this.namePNL.Size = new System.Drawing.Size(413, 44);
             this.namePNL.TabIndex = 0;
             // 
             // nameBox
@@ -61,7 +63,7 @@
             this.nameBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nameBox.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
-            this.nameBox.Location = new System.Drawing.Point(6, 10);
+            this.nameBox.Location = new System.Drawing.Point(6, 9);
             this.nameBox.Name = "nameBox";
             this.nameBox.Size = new System.Drawing.Size(400, 25);
             this.nameBox.TabIndex = 2;
@@ -72,9 +74,9 @@
             this.nameLBL.BackColor = System.Drawing.Color.Transparent;
             this.nameLBL.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameLBL.ForeColor = System.Drawing.Color.Gainsboro;
-            this.nameLBL.Location = new System.Drawing.Point(421, 61);
+            this.nameLBL.Location = new System.Drawing.Point(421, 56);
             this.nameLBL.Name = "nameLBL";
-            this.nameLBL.Size = new System.Drawing.Size(99, 36);
+            this.nameLBL.Size = new System.Drawing.Size(99, 33);
             this.nameLBL.TabIndex = 1;
             this.nameLBL.Text = "Name";
             this.nameLBL.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -85,9 +87,9 @@
             this.ageLBL.BackColor = System.Drawing.Color.Transparent;
             this.ageLBL.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ageLBL.ForeColor = System.Drawing.Color.Gainsboro;
-            this.ageLBL.Location = new System.Drawing.Point(426, 240);
+            this.ageLBL.Location = new System.Drawing.Point(426, 182);
             this.ageLBL.Name = "ageLBL";
-            this.ageLBL.Size = new System.Drawing.Size(99, 36);
+            this.ageLBL.Size = new System.Drawing.Size(99, 33);
             this.ageLBL.TabIndex = 3;
             this.ageLBL.Text = "Age";
             this.ageLBL.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -98,9 +100,9 @@
             this.agePNL.BackColor = System.Drawing.Color.Gainsboro;
             this.agePNL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.agePNL.Controls.Add(this.ageBox);
-            this.agePNL.Location = new System.Drawing.Point(274, 279);
+            this.agePNL.Location = new System.Drawing.Point(274, 218);
             this.agePNL.Name = "agePNL";
-            this.agePNL.Size = new System.Drawing.Size(408, 47);
+            this.agePNL.Size = new System.Drawing.Size(408, 44);
             this.agePNL.TabIndex = 2;
             // 
             // ageBox
@@ -109,7 +111,7 @@
             this.ageBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ageBox.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ageBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
-            this.ageBox.Location = new System.Drawing.Point(4, 10);
+            this.ageBox.Location = new System.Drawing.Point(4, 9);
             this.ageBox.Name = "ageBox";
             this.ageBox.Size = new System.Drawing.Size(397, 25);
             this.ageBox.TabIndex = 2;
@@ -120,12 +122,13 @@
             this.weightLBL.BackColor = System.Drawing.Color.Transparent;
             this.weightLBL.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.weightLBL.ForeColor = System.Drawing.Color.Gainsboro;
-            this.weightLBL.Location = new System.Drawing.Point(421, 422);
+            this.weightLBL.Location = new System.Drawing.Point(421, 286);
             this.weightLBL.Name = "weightLBL";
-            this.weightLBL.Size = new System.Drawing.Size(125, 36);
+            this.weightLBL.Size = new System.Drawing.Size(125, 33);
             this.weightLBL.TabIndex = 5;
             this.weightLBL.Text = "Weight";
             this.weightLBL.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.weightLBL.Click += new System.EventHandler(this.weightLBL_Click);
             // 
             // weightPNL
             // 
@@ -133,9 +136,9 @@
             this.weightPNL.BackColor = System.Drawing.Color.Gainsboro;
             this.weightPNL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.weightPNL.Controls.Add(this.weightBox);
-            this.weightPNL.Location = new System.Drawing.Point(274, 461);
+            this.weightPNL.Location = new System.Drawing.Point(269, 344);
             this.weightPNL.Name = "weightPNL";
-            this.weightPNL.Size = new System.Drawing.Size(408, 47);
+            this.weightPNL.Size = new System.Drawing.Size(408, 44);
             this.weightPNL.TabIndex = 4;
             // 
             // weightBox
@@ -144,7 +147,7 @@
             this.weightBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.weightBox.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.weightBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
-            this.weightBox.Location = new System.Drawing.Point(4, 10);
+            this.weightBox.Location = new System.Drawing.Point(4, 9);
             this.weightBox.Name = "weightBox";
             this.weightBox.Size = new System.Drawing.Size(397, 25);
             this.weightBox.TabIndex = 2;
@@ -156,19 +159,42 @@
             this.startBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startBTN.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.startBTN.ForeColor = System.Drawing.Color.Gainsboro;
-            this.startBTN.Location = new System.Drawing.Point(201, 603);
+            this.startBTN.Location = new System.Drawing.Point(201, 557);
             this.startBTN.Name = "startBTN";
-            this.startBTN.Size = new System.Drawing.Size(545, 57);
+            this.startBTN.Size = new System.Drawing.Size(545, 53);
             this.startBTN.TabIndex = 6;
             this.startBTN.Text = "Start";
             this.startBTN.UseVisualStyleBackColor = false;
             this.startBTN.Click += new System.EventHandler(this.startBTN_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(91, 462);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(407, 20);
+            this.comboBox1.TabIndex = 7;
+            // 
+            // comLBL
+            // 
+            this.comLBL.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.comLBL.BackColor = System.Drawing.Color.Transparent;
+            this.comLBL.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comLBL.ForeColor = System.Drawing.Color.Gainsboro;
+            this.comLBL.Location = new System.Drawing.Point(421, 411);
+            this.comLBL.Name = "comLBL";
+            this.comLBL.Size = new System.Drawing.Size(125, 33);
+            this.comLBL.TabIndex = 8;
+            this.comLBL.Text = "COM";
+            this.comLBL.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // UserForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.comLBL);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.startBTN);
             this.Controls.Add(this.weightLBL);
             this.Controls.Add(this.weightPNL);
@@ -177,7 +203,7 @@
             this.Controls.Add(this.nameLBL);
             this.Controls.Add(this.namePNL);
             this.Name = "UserForm";
-            this.Size = new System.Drawing.Size(946, 660);
+            this.Size = new System.Drawing.Size(946, 609);
             this.namePNL.ResumeLayout(false);
             this.namePNL.PerformLayout();
             this.agePNL.ResumeLayout(false);
@@ -201,5 +227,7 @@
         private System.Windows.Forms.Panel weightPNL;
         private System.Windows.Forms.TextBox weightBox;
         private System.Windows.Forms.Button startBTN;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label comLBL;
     }
 }

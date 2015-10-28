@@ -40,12 +40,18 @@ namespace Healthcare_IP2
         public delegate void ErrorDelegate(string error);
         public static event ErrorDelegate IncomingErrorEvent;
 
-        
+        private MainForm Parent;
 
-        private static void OnIncomingDataEvent(string[] data)
+        public BikeCommHandler(MainForm Parent)
         {
-            DataDelegate handler = IncomingDataEvent;
-            if (handler != null) handler(data);
+            this.Parent = Parent;
+        }
+
+        public void OnIncomingDataEvent(string[] data)
+        {
+            //DataDelegate handler = IncomingDataEvent;
+            //if (handler != null) handler(data);
+            ((MainForm)this.Parent).SendDataToForm(data);
         }
 
         public static void OnIncomingErrorEvent(string error)
@@ -84,7 +90,8 @@ namespace Healthcare_IP2
 
         public void closeComm()
         {
-            ComPort.Close();
+            if(ComPort != null) { ComPort.Close(); }
+            
         }
 
         public void sendData(string data)
