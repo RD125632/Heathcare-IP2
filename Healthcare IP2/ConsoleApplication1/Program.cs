@@ -102,9 +102,6 @@ namespace ConsoleApplication1
                                 break;
 
                         }
-
-                        w.WriteLine(command);
-                        w.Flush();
                     }
                 }
             };
