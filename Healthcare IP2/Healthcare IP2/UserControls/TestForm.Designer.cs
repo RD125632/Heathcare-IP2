@@ -39,6 +39,7 @@
             this.speedLBL = new System.Windows.Forms.Label();
             this.distanceLBL = new System.Windows.Forms.Label();
             this.timeLBL = new System.Windows.Forms.Label();
+            System.Windows.Forms.DataVisualization.Charting.Chart.CheckForIllegalCrossThreadCalls = false;
             this.pulseChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.startBTN = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -149,9 +150,9 @@
             this.pulseChart.Name = "pulseChart";
             this.pulseChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
             this.pulseChart.PaletteCustomColors = new System.Drawing.Color[] {
-        System.Drawing.Color.LightCoral,
-        System.Drawing.Color.LightGreen,
-        System.Drawing.Color.Khaki};
+            System.Drawing.Color.LightCoral,
+            System.Drawing.Color.LightGreen,
+            System.Drawing.Color.Khaki};
             series4.BorderWidth = 10;
             series4.ChartArea = "ChartArea1";
             series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;

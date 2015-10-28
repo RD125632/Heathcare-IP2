@@ -46,7 +46,7 @@
             this.menuPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.menuPanel.Location = new System.Drawing.Point(0, 0);
             this.menuPanel.Name = "menuPanel";
-            this.menuPanel.Size = new System.Drawing.Size(584, 43);
+            this.menuPanel.Size = new System.Drawing.Size(584, 40);
             this.menuPanel.TabIndex = 0;
             // 
             // nameFORMLBL
@@ -69,7 +69,7 @@
             this.closeLBLBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.closeLBLBTN.Font = new System.Drawing.Font("Arial Unicode MS", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.closeLBLBTN.ForeColor = System.Drawing.Color.Gainsboro;
-            this.closeLBLBTN.Location = new System.Drawing.Point(541, -8);
+            this.closeLBLBTN.Location = new System.Drawing.Point(541, -7);
             this.closeLBLBTN.Margin = new System.Windows.Forms.Padding(0);
             this.closeLBLBTN.Name = "closeLBLBTN";
             this.closeLBLBTN.Size = new System.Drawing.Size(42, 50);
@@ -89,7 +89,7 @@
             this.testForm1.BackColor = System.Drawing.Color.DimGray;
             this.testForm1.Location = new System.Drawing.Point(0, 45);
             this.testForm1.Name = "testForm1";
-            this.testForm1.Size = new System.Drawing.Size(917, 645);
+            this.testForm1.Size = new System.Drawing.Size(917, 596);
             this.testForm1.TabIndex = 2;
             this.testForm1.Visible = false;
             // 
@@ -119,10 +119,10 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
-            this.ClientSize = new System.Drawing.Size(584, 561);
+            this.ClientSize = new System.Drawing.Size(584, 518);
             this.Controls.Add(this.testForm1);
             this.Controls.Add(this.userForm1);
             this.Controls.Add(this.menuPanel);

@@ -32,7 +32,7 @@ namespace WindowsFormsApplication2
             InitializeComponent();
             try
             {
-                port = new SerialPort("COM3");
+                port = new SerialPort("COM10");
 
                 port.BaudRate = 9600;
                 port.Parity = Parity.None;
